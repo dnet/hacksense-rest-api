@@ -1,4 +1,4 @@
-<h1>Hacksense public REST API</h1>
+<h1>HackSense public REST API</h1>
 <h2>/status</h2>
 <p>Shows the current status of H.A.C.K. and the timestamp of the last change in
 <?= $html->link('HTML', array('controller' => 'state_changes', 'action' => 'status')) ?>,
@@ -15,4 +15,4 @@ formats.</p>
 <?= $html->link('CSV', array('controller' => 'state_changes', 'action' => 'status', 'ext' => 'xml')) ?>
 
 formats.</p>
-<p>Powered by <a href="http://cakephp.org/">CakePHP</a>, <a href="http://validator.w3.org/check?uri=referer">Valid XHTML</a>, <a href="http://validator.w3.org/feed/check.cgi?url=http%3A//vsza.hu/hacksense/status.rss">Valid RSS</a>, source code is available at <a href="http://github.com/">GitHub</a></p>
+<p>Powered by <a href="http://cakephp.org/">CakePHP</a>, <a href="http://validator.w3.org/check?uri=referer">Valid XHTML</a>, <a href="http://validator.w3.org/feed/check.cgi?url=http%3A//vsza.hu/hacksense/status.rss">Valid RSS</a>, source code is available at <a href="http://github.com/dnet/hacksense-rest-api">GitHub</a></p>
