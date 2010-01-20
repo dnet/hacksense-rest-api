@@ -5,7 +5,7 @@ class StateChangesController extends AppController {
 
 	function status() {
 		$status = $this->StateChange->find('first',
-			array('order' => 'when desc', 'fields' => array('id', 'when', 'what')));
+			array('order' => array('when desc', 'id desc'), 'fields' => array('id', 'when', 'what')));
 		$this->set(compact('status'));
 	}
 
@@ -15,7 +15,7 @@ class StateChangesController extends AppController {
 
 	function history() {
 		$history = $this->StateChange->find('all',
-			array('order' => 'when asc', 'fields' => array('id', 'when', 'what')));
+			array('order' => array('when asc', 'id asc'), 'fields' => array('id', 'when', 'what')));
 		$this->set(compact('history'));
 	}
 
