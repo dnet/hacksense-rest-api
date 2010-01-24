@@ -25,7 +25,7 @@ class StateChangesController extends AppController {
 			$mac = hash_hmac('sha256', "{$data[0]}!{$data[1]}", file_get_contents(CONFIGS . 'hacksense.key'));
 			if ($data[2] == $mac) {
 				$success = $this->StateChange->save(array('StateChange' =>
-					array('what' => $data[1], 'uuid' => $data[0])));
+					array('what' => $data[1], 'id' => $data[0])));
 			} else {
 				$success = false;
 			}
