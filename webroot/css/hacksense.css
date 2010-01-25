@@ -1,0 +1,13 @@
+.open {
+	color: #090;
+	font-weight: bold;
+}
+
+.closed {
+	color: #f00;
+	font-weight: bold;
+}
+
+.uuid {
+	font-family: monospace;
+}
