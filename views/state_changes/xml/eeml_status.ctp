@@ -17,7 +17,7 @@
 		<data id="0">
 			<tag>status code</tag>
 			<tag>hackerspace opening</tag>
-			<value minValue="0.0" maxValue="1.0"><?= $status['StateChange']['what'] ? 'open' : 'closed' ?></value>
+			<value minValue="0.0" maxValue="1.0"><?= $status['StateChange']['what'] ?></value>
 		</data>
 	</environment>
 </eeml>
