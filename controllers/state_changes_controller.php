@@ -26,6 +26,17 @@ class StateChangesController extends AppController {
 			if ($data[2] == $mac) {
 				$success = $this->StateChange->save(array('StateChange' =>
 					array('what' => $data[1], 'id' => $data[0])));
+				$erlconf = CONFIGS . 'erlang.php';
+				if ($success && file_exists($erlconf) && extension_loaded('peb')) {
+					// notify erlang node using mypeb (http://code.google.com/p/mypeb/)
+					include($erlconf);
+					$link = peb_connect($erlang_node, $erlang_secret);
+					if ($link) {
+						$msg = peb_vencode('~a', array('hsapi_changed'));
+						peb_send_byname('hsapi_listener', $msg, $link);
+						peb_close($link);
+					}
+				}
 			} else {
 				$success = false;
 			}
