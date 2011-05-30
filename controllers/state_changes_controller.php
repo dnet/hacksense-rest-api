@@ -6,6 +6,12 @@ class StateChangesController extends AppController {
 	function status() {
 		$status = $this->StateChange->find('first',
 			array('order' => array('when desc', 'id desc'), 'fields' => array('id', 'when', 'what')));
+		if (isset($_SERVER['HTTP_IF_NONE_MATCH']) &&
+			$_SERVER['HTTP_IF_NONE_MATCH'] == $status['StateChange']['id']) {
+			header('HTTP/1.0 304 Not Modified');
+			die();
+		}
+		header('ETag: ' . $status['StateChange']['id']);
 		$this->set(compact('status'));
 	}
 
