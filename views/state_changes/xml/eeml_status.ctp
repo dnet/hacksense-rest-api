@@ -6,8 +6,8 @@
 		<feed>http://vsza.hu/hacksense/eeml_status.xml</feed>
 		<status>live</status>
 		<description>Hacksense Hackerspace Budapest</description>
-		<icon>http://www.hspbp.org/icon.png</icon>
-		<website>http://www.hspbp.org/</website>
+		<icon>http://www.hsbp.org/icon.png</icon>
+		<website>http://www.hsbp.org/</website>
 		<location exposure="indoor" domain="physical" disposition="fixed">
 			<name>Hackerspace BP</name>
 			<lat>47.501192</lat>
