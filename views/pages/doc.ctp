@@ -17,12 +17,7 @@ formats.</p>
 formats.</p>
 <p>Powered by <a href="http://cakephp.org/">CakePHP</a>, <a href="http://validator.w3.org/check?uri=referer">Valid XHTML</a>, <a href="http://validator.w3.org/feed/check.cgi?url=http%3A//vsza.hu/hacksense/status.rss">Valid RSS</a>, source code is available at <a href="http://github.com/dnet/hacksense-rest-api">GitHub</a></p>
 <p>
-<script type="text/javascript">
-	var flattr_url = 'http://hsbp.org/hacksense';
-</script>
-<script src="http://api.flattr.com/button/load.js" type="text/javascript"></script>
-<noscript>
-<a href="http://flattr.com/thing/18357/HackSense" target="_blank">
-<img src="http://api.flattr.com/button/button-static-50x60.png" title="Flattr this" border="0" /></a>
-</noscript>
+<a class="FlattrButton" style="display:none;" href="http://hspbp.org/hacksense"></a>
+<noscript><a href="http://flattr.com/thing/18357/HackSense" target="_blank">
+<img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a></noscript>
 </p>
