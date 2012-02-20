@@ -3,7 +3,7 @@
 	<head> 
 		<title>HackSense</title> 
 		<?= $html->charset() . $html->meta('rss', '/status.rss') . $html->css('hacksense') ?>
-		</head> 
+	</head>
 	<body> 
 		<?= $content_for_layout ?>
 	</body>
